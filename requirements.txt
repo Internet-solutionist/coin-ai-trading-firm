@@ -5,4 +5,6 @@ numpy
 alpaca-py
 openai
 requests
+mempalace
 # sqlite3 is built-in
+# chromadb pulled by mempalace for sovereign local memory
