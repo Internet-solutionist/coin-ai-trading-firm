@@ -5,7 +5,13 @@ rich>=13.0
 python-dotenv>=1.0
 pydantic>=2.0
 streamlit>=1.35.0
+fastapi>=0.110.0
+uvicorn[standard]>=0.29.0
 # For production broker integration (user to uncomment when ready)
 alpaca-py>=0.20
 # ccxt>=4.0
 # yfinance>=0.2  # optional for real data ingestion
+# redis>=5.0  # for real caching in Cost Guard
+openai>=1.30.0  # for real Grok / OpenAI-compatible LLM calls (own capable model)
+requests>=2.31.0  # for Ollama and fallback LLM calls
+
