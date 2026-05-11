@@ -6,5 +6,6 @@ alpaca-py
 openai
 requests
 mempalace
+notion-sdk-py
 # sqlite3 is built-in
 # chromadb pulled by mempalace for sovereign local memory
