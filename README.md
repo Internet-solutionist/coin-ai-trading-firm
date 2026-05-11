@@ -4,32 +4,24 @@
 
 **Powered by Grok (xAI) as primary own capable model** — with seamless Ollama local fallbacks for full sovereignty.
 
-### Trading Setup & Strategy Storage (NEW - v2.5)
+### v2.11: Floci Sovereign Cloud Layer + Full Installation Guide
 
-**Full Trading Flow:**
-1. Market data ingested by Research + Backtester Agents.
-2. Structured signal generated (ticker, direction, entry_range, confidence, strategy_id).
-3. Validator + Regime Sentinel perform multi-layer validation.
-4. **Every validatable signal is automatically persisted** to SQLite Strategy Registry + Signal Journal (`data/strategies.db`).
-5. Executor routes to Alpaca paper trading (real orders when Prime Directive satisfied).
-6. P&L feedback loops back into registry for strategy evolution.
+**New Features:**
+- Floci local AWS emulator integration for S3-style backtest data storage and audit logs (enable with FLOCI_ENABLED=true in .env).
+- Complete beginner-friendly installation PDF guide (optimized for old hardware like HP machines).
+- On-chain regime data stub ready for Regime Sentinel expansion.
 
-**Strategy Storage Details:**
-- New `strategies/strategy_registry.py` with SQLite backend.
-- Every validated signal stored as versioned JSON + metadata (timestamp, validation_score, regime, execution status, PNL).
-- Strategies are auto-versioned and queryable for backtesting, audit, and council learning.
-- Full audit trail for every decision — capital preservation first.
-
-Clone and run:
+**Quick Sovereign Setup:**
 ```bash
 git clone https://github.com/Internet-solutionist/coin-ai-trading-firm.git
 cd coin-ai-trading-firm
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-# Initialize registry & run
 streamlit run streamlit_app.py
 ```
 
-**Prime Directive:** Paper only until 60+ audited profitable days.
+**Prime Directive:** Paper trading only until 60+ audited profitable days with full decision audit trail.
 
 **CoIn — We insure against the market’s expensive mistakes.**
+
+*Repository version: 2.11 | Built agentically by Grok | May 2026*
