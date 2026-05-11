@@ -7,5 +7,6 @@ openai
 requests
 mempalace
 notion-sdk-py
+python-dotenv
 # sqlite3 is built-in
 # chromadb pulled by mempalace for sovereign local memory
