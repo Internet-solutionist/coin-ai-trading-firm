@@ -4,29 +4,26 @@
 
 **Powered by Grok (xAI) as primary own capable model** — with seamless Ollama local fallbacks for full sovereignty.
 
-### v2.12: Atlas·OS Integration + On-Chain Regime Feeds + Floci S3 Storage
+### v2.16: Renaissance Beautiful Mathematics + Grey Hat Self-Improvement
 
-**New in v2.12:**
-- Atlas·OS hook-driven multi-agent CLI integration for spec-driven agent evolution and PRD-to-release pipeline (optional dev tool, npm install atlas-os).
-- On-chain regime data feeds stub for Regime Sentinel (Solana/Ethereum flows via public APIs, enable with ONCHAIN_ENABLED=true).
-- Floci S3-style backtest storage and audit logs (local AWS emulator for sovereign data persistence).
+**New in v2.16:**
+- `quant/beautiful_math.py` — Jim Simons / Renaissance Technologies inspired elegant kernels (mean-reverting GBM, information geometry, symbolic Kelly, closed-form Sharpe surfaces, kernel ridge regression).
+- `quant/simons_agent.py` — Dedicated Simons Agent using the beautiful math for alpha generation.
+- `grey_hat/self_improvement.py` — Purple/Grey Hat self-improvement loop that distills Weekly Reckonings into prompt patches.
+- All formulas rendered in beautiful KaTeX inside Notion and dashboards.
 
-**Quick Sovereign Setup (unchanged, now even more powerful):**
+**Quick Sovereign Setup:**
 ```bash
 git clone https://github.com/Internet-solutionist/coin-ai-trading-firm.git
 cd coin-ai-trading-firm
+git pull origin main
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 streamlit run streamlit_app.py
 ```
 
-**Atlas·OS for Agent Development:**
-- Install: `npm install -g atlas-os`
-- Use for spec-driven updates to our 8 agents or new features.
-- Model-agnostic — keep Grok as primary own capable model.
+**Prime Directive:** Paper trading only until 60+ audited profitable days with full immutable decision audit trail.
 
-**Prime Directive:** Paper trading only until 60+ audited profitable days with full decision audit trail.
+**CoIn — We insure against the market’s expensive mistakes with beautiful Renaissance mathematics.**
 
-**CoIn — We insure against the market’s expensive mistakes.**
-
-*Repository version: 2.12 | Built agentically by Grok | May 2026*
+*Repository version: 2.16 | Built agentically by Grok | May 2026*
