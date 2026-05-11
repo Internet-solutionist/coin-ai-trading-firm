@@ -41,7 +41,7 @@ class RenaissanceMath:
         b = symbols('b')  # odds
         p = symbols('p')  # win probability
         kelly = (b * p - (1 - p)) / b
-        return kelly.subs({b: odds, p: (edge + 1) / 2})  # simplified beautiful form
+        return kelly.subs({b: odds, p: (edge + 1) / 2})
 
     @staticmethod
     def closed_form_sharpe_surface(
@@ -72,7 +72,3 @@ class RenaissanceMath:
             K_new = np.exp(-0.5 * np.sum((X_new[:, None] - X[None, :]) ** 2, axis=2))
             return K_new @ alpha
         return predict
-
-# Example beautiful formula rendered in KaTeX
-# \alpha = \mathbb{E}[R] - \frac{1}{2}\sigma^2 + \lambda \cdot I(X;Y)
-# \theta^* = \arg\max_\theta \left( \mu \theta - \frac{1}{2}\sigma^2\theta^2 - \gamma \cdot \text{KL}(P||Q) \right)

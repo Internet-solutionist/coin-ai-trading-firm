@@ -4,13 +4,15 @@
 
 **Powered by Grok (xAI) as primary own capable model** — with seamless Ollama local fallbacks for full sovereignty.
 
-### v2.16: Renaissance Beautiful Mathematics + Grey Hat Self-Improvement
+### v2.17: Security Breach Fixes (Red/Purple/Grey Hat Hardening)
 
-**New in v2.16:**
-- `quant/beautiful_math.py` — Jim Simons / Renaissance Technologies inspired elegant kernels (mean-reverting GBM, information geometry, symbolic Kelly, closed-form Sharpe surfaces, kernel ridge regression).
-- `quant/simons_agent.py` — Dedicated Simons Agent using the beautiful math for alpha generation.
-- `grey_hat/self_improvement.py` — Purple/Grey Hat self-improvement loop that distills Weekly Reckonings into prompt patches.
-- All formulas rendered in beautiful KaTeX inside Notion and dashboards.
+**Fixed in v2.17:**
+- Prompt injection & malicious input sanitization
+- CrewAI RCE/SSRF/tool misuse hardening
+- MemPalace memory poisoning prevention (hashing + validation)
+- API key exposure protection + rate limiting
+- Input/output validation on all signals and handoffs
+- New `security/hardening.py` module integrated across all agents
 
 **Quick Sovereign Setup:**
 ```bash
@@ -24,6 +26,6 @@ streamlit run streamlit_app.py
 
 **Prime Directive:** Paper trading only until 60+ audited profitable days with full immutable decision audit trail.
 
-**CoIn — We insure against the market’s expensive mistakes with beautiful Renaissance mathematics.**
+**CoIn — We insure against the market’s expensive mistakes with beautiful Renaissance mathematics and Grey Hat security.**
 
-*Repository version: 2.16 | Built agentically by Grok | May 2026*
+*Repository version: 2.17 | Built agentically by Grok | May 2026*
