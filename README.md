@@ -4,15 +4,13 @@
 
 **Powered by Grok (xAI) as primary own capable model** — with seamless Ollama local fallbacks for full sovereignty.
 
-### v2.17: Security Breach Fixes (Red/Purple/Grey Hat Hardening)
+### v2.18: Multi-Factor Security Layer (PIN, Password, Passcodeword + Recovery)
 
-**Fixed in v2.17:**
-- Prompt injection & malicious input sanitization
-- CrewAI RCE/SSRF/tool misuse hardening
-- MemPalace memory poisoning prevention (hashing + validation)
-- API key exposure protection + rate limiting
-- Input/output validation on all signals and handoffs
-- New `security/hardening.py` module integrated across all agents
+**Added in v2.18:**
+- `security/multi_factor.py` — PIN (quick actions), Password (high-risk), Passcodeword (voice/text confirmation)
+- Recovery methods: one-time codes, MemPalace-encrypted backups
+- `require_mfa(action, ...)` integrated into Executor, CEO, and emergency stop
+- Grey Hat / Purple Team sovereign MFA for trading firm
 
 **Quick Sovereign Setup:**
 ```bash
@@ -26,6 +24,6 @@ streamlit run streamlit_app.py
 
 **Prime Directive:** Paper trading only until 60+ audited profitable days with full immutable decision audit trail.
 
-**CoIn — We insure against the market’s expensive mistakes with beautiful Renaissance mathematics and Grey Hat security.**
+**CoIn — We insure against the market’s expensive mistakes with beautiful Renaissance mathematics and multi-factor Grey Hat security.**
 
-*Repository version: 2.17 | Built agentically by Grok | May 2026*
+*Repository version: 2.18 | Built agentically by Grok | May 2026*
